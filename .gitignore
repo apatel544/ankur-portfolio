@@ -22,7 +22,17 @@
 
 # misc
 .DS_Store
+Thumbs.db
 *.pem
+
+# OS and IDE specific
+.idea/
+.vscode/
+
+# Logs
+logs/
+*.log
+*.gz
 
 # debug
 npm-debug.log*
@@ -39,3 +49,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Git-related (optional)
+.git/

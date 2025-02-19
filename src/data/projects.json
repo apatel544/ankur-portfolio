@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "title": "Bus Tracker",
+    "description": "Tracks bus stops between MIT and Harvard using Mapbox API.",
+    "image": "/images/bustracker-img1.jpg",
+    "github": "https://github.com/apatel544/BusTracker",
+    "live": "https://apatel544.github.io/BusTracker/"
+  }
+]
