@@ -16,14 +16,6 @@ body {
   @apply min-h-screen flex flex-col items-center;
 }
 
-.section {
-  @apply w-full max-w-4xl p-6;
-}
-
-.hero-title {
-  @apply text-4xl font-bold mb-4;
-}
-
 .section-title {
   @apply text-3xl font-semibold mb-4;
 }
@@ -45,15 +37,47 @@ body {
   @apply cursor-pointer hover:text-gray-300;
 }
 
-/* Section styling */
+/* Element styling */
+.element-title {
+  @apply text-3xl font-semibold mb-4;
+}
+
+/* Hero Section */
 .hero {
-  @apply min-h-screen flex flex-col items-center justify-center bg-gray-800;
+  @apply min-h-screen flex flex-col items-center justify-center text-center bg-gray-900;
 }
 
-.about {
-  @apply min-h-screen flex flex-col items-center justify-center bg-gray-700;
+.hero-title {
+  @apply text-5xl font-bold relative;
 }
 
-.projects {
-  @apply min-h-screen flex flex-col items-center justify-center bg-gray-600;
+.hero-subtitle {
+  @apply text-lg text-gray-300 mt-4 max-w-xl;
+}
+
+.hero-icons {
+  @apply flex space-x-10 mt-6;
+}
+
+.hero-icons a {
+  @apply text-2xl text-white hover:text-blue-400 transition-colors;
+}
+
+.hero-cta {
+  @apply mt-8 px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition-all;
+}
+
+/* Name Underline Styling - Adds animation when hovering the hero title*/
+.name-underline {
+  @apply relative inline-block;
+}
+
+.name-underline::after {
+  content: "";
+  @apply absolute left-0 bottom-0 w-full h-1 bg-blue-500;
+  @apply transform scale-x-0 transition-transform duration-300;
+}
+
+.name-underline:hover::after {
+  @apply transform scale-x-100;
 }
