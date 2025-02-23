@@ -67,6 +67,23 @@ body {
   @apply mt-8 px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition-all;
 }
 
+/* About Me Section */
+.about-me {
+  @apply min-h-screen flex flex-col items-center justify-center bg-gray-700 text-white p-6;
+}
+
+.about-me-title {
+  @apply text-3xl font-semibold mb-4;
+}
+
+.about-me-content {
+  @apply max-w-3xl text-center text-lg text-gray-300;
+}
+
+.about-me-image {
+  @apply w-40 h-48 mb-4;
+}
+
 /* Name Underline Styling - Adds animation when hovering the hero title*/
 .name-underline {
   @apply relative inline-block;
